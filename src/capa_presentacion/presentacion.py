@@ -1,5 +1,5 @@
-import tkinter as tk
-ventana = tk.Tk()
+from tkinter import Tk, Label, Button
+ventana = Tk()
 ventana.title("Programa de registro") # titulo en la ventana
 ventana.geometry("800x500+0+0") # tamaño de "ancho" y "alto" y tambien ubicación en la pantalla inicialmente
 ventana.minsize(400, 200) # tamaño minimo permitido de "ancho" y "alto" 
