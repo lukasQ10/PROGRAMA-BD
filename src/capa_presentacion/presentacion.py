@@ -8,4 +8,9 @@ ventana.resizable(True, True) # prohición para agrandar el "ancho" y "alto"; lo
 ventana.configure(bg="azure2") # color de fondo
 ventana.attributes("-alpha", 1) # nivel de transparencia desde 0.0 hasta 1
 
-ventana.mainloop() # arrancar o bucle de arranque
+lbl = Label(ventana, text= 'Base de Datos')
+lbl.pack()
+btn = Button(ventana, text= 'Ingresar', command=calculadora)
+btn.pack()
+
+ventana.mainloop() # arrancar o bucle principal de arranque
