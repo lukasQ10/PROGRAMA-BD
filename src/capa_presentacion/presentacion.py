@@ -1,4 +1,6 @@
+
 from tkinter import Tk, Label, Button
+from codigo.py import calculadora
 ventana = Tk()
 ventana.title("Programa de registro") # titulo en la ventana
 ventana.geometry("800x500+0+0") # tamaño de "ancho" y "alto" y tambien ubicación en la pantalla inicialmente
