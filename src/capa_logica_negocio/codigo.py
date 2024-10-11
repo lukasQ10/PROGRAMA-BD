@@ -1,4 +1,4 @@
-def suma(x, y):
+"""def suma(x, y):
   return x + y
 def resta(x, y):
   return x - y
@@ -11,16 +11,20 @@ def divi(x, y):
 
 def calculadora():
   while True:
-    print("""Operaciones disponibles:
+    print('''Operaciones disponibles:
           1. Suma
           2. Resta
           3. Multiplicación
           4. División
           5. Salir
-          """)
+          ''')
     try:
       eleccion = int(input('Ingrese el numero que de la operacion que desea consultar: '))
       if eleccion in {1, 2, 3, 4, 5}:
+        if eleccion == 5:
+          print("Fue un gusto servirte")
+          break
+          
         x = int(input('Ingrese el primer numero: '))
         y = int(input('Ingrese el segundo numero: '))
         
@@ -32,9 +36,6 @@ def calculadora():
           print (f'El resultado es: {multi(x, y)}')    
         elif eleccion == 4:
           print (f'El resultado es: {divi(x, y)}')
-        elif eleccion == 5:
-          print("Fue un gusto servirte") 
-        break
       else:
         print("\nNúmero no valido; ingrese un numero del 1 al 5 según la operación")
       
@@ -43,3 +44,36 @@ def calculadora():
       print("no puedes ingresar un caracter diferente a un númeroIngrese solamente un número según la operación ")  
 if __name__ == '__main__':
   calculadora()    
+
+"""
+
+
+def suma(x, y):
+    return x + y
+
+def resta(x, y):
+    return x - y
+
+def multi(x, y):
+    return x * y
+
+def divi(x, y):
+    if y == 0:
+        return "No se puede dividir por cero"
+    return x / y
+
+def calculadora(operacion, x, y):
+    if operacion == "suma":
+        return suma(x, y)
+    elif operacion == "resta":
+        return resta(x, y)
+    elif operacion == "multi":
+        return multi(x, y)
+    elif operacion == "divi":
+        return divi(x, y)
+    else:
+        return "Operación no válida"
+
+
+
+
