@@ -38,7 +38,7 @@ from tkinter import Tk, Label, Button, Entry, StringVar, OptionMenu
 # Agregar la ruta del módulo
 #sys.path.append(r"f:/ANALISIS Y DESARROLLO/PROGRAMA-BD/src")
 #sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
-print("Rutas del sistema:", sys.path)
+
 
 def realizar_operacion():
     x = int(entry_x.get())
