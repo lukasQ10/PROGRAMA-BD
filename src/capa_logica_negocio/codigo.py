@@ -1,12 +1,12 @@
-"""def suma(x, y):
+
+def suma(x, y):
   return x + y
 def resta(x, y):
   return x - y
 def multi(x, y):
   return x * y
 def divi(x, y):
-  if y == 0:
-    return  "No se puede dividir por cero" if y == 0 else x / y
+  return  "No se puede dividir por cero" if y == 0 else x / y
 
 
 def calculadora():
@@ -45,9 +45,9 @@ def calculadora():
 if __name__ == '__main__':
   calculadora()    
 
+
+
 """
-
-
 def suma(x, y):
     return x + y
 
@@ -58,11 +58,11 @@ def multi(x, y):
     return x * y
 
 def divi(x, y):
-    if y == 0:
-        return "No se puede dividir por cero"
-    return x / y
+    return "No se puede dividir por cero" if y == 0 else x/y
+  
 
-def calculadora(operacion, x, y):
+def calculadora(x, y):
+    
     if operacion == "suma":
         return suma(x, y)
     elif operacion == "resta":
@@ -73,7 +73,6 @@ def calculadora(operacion, x, y):
         return divi(x, y)
     else:
         return "Operación no válida"
-
-
+"""
 
 

@@ -1,3 +1,16 @@
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'capa_logica_negocio')))
+
+from capa_logica_negocio.codigo import calculadora
+
+print("Ejecutanfo presentacion.py")
+
+
+
+
+
+
 
 
 """
@@ -5,9 +18,9 @@ import sys
 import os
 import threading
 from tkinter import Tk, Label, Button
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
+#sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
 
-from capa_logica_negocio.codigo import calculadora
+from src.capa_logica_negocio.codigo import calculadora
 
 def iniciar_calculadora():
   calculadora()
@@ -27,60 +40,5 @@ btn = Button(ventana, text= 'Ingresar', command=lambda: threading.Thread(target=
 btn.pack()
 
 ventana.mainloop() # arrancar o bucle principal de arranque
+
 """
-
-
-import sys
-import os
-from tkinter import Tk, Label, Button, Entry, StringVar, OptionMenu
-#from src.capa_logica_negocio.codigo import calculadora
-
-# Agregar la ruta del módulo
-#sys.path.append(r"f:/ANALISIS Y DESARROLLO/PROGRAMA-BD/src")
-#sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
-
-
-def realizar_operacion():
-    x = int(entry_x.get())
-    y = int(entry_y.get())
-    operacion = seleccion_operacion.get()
-    resultado = calculadora(operacion, x, y)
-    label_resultado.config(text=f"Resultado: {resultado}")
-
-ventana = Tk()
-ventana.title("Calculadora GUI")  
-ventana.geometry("400x300")  
-ventana.configure(bg="azure2")
-
-# Etiqueta para operación
-label_operacion = Label(ventana, text="Seleccione operación:")
-label_operacion.pack()
-
-# Menú desplegable para seleccionar operación
-operaciones = ["suma", "resta", "multi", "divi"]
-seleccion_operacion = StringVar(ventana)
-seleccion_operacion.set(operaciones[0])
-menu_operacion = OptionMenu(ventana, seleccion_operacion, *operaciones)
-menu_operacion.pack()
-
-# Entradas para los números
-label_x = Label(ventana, text="Ingrese el primer número:")
-label_x.pack()
-entry_x = Entry(ventana)
-entry_x.pack()
-
-label_y = Label(ventana, text="Ingrese el segundo número:")
-label_y.pack()
-entry_y = Entry(ventana)
-entry_y.pack()
-
-# Botón para realizar la operación
-btn_calcular = Button(ventana, text="Calcular", command=realizar_operacion)
-btn_calcular.pack()
-
-# Etiqueta para mostrar el resultado
-label_resultado = Label(ventana, text="Resultado: ")
-label_resultado.pack()
-
-ventana.mainloop()
-
