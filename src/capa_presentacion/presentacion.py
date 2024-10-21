@@ -1,31 +1,14 @@
-import sys
-import os
 
-
-from capa_data import saludo
-
-print(saludo)
-
-print("Ejecutanfo presentacion.py")
-
-
-
-
-
-
-
-
-"""
 import sys 
 import os
 import threading
 from tkinter import Tk, Label, Button
 #sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
 
-from src.capa_logica_negocio.codigo import calculadora
+#from src.capa_logica_negocio.codigo import calculadora
 
-def iniciar_calculadora():
-  calculadora()
+#def iniciar_calculadora():
+ # calculadora()
 
 ventana = Tk()
 ventana.title("Programa de registro") # titulo en la ventana
@@ -42,5 +25,3 @@ btn = Button(ventana, text= 'Ingresar', command=lambda: threading.Thread(target=
 btn.pack()
 
 ventana.mainloop() # arrancar o bucle principal de arranque
-
-"""
