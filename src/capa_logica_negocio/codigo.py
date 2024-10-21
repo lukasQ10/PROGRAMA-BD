@@ -19,7 +19,7 @@ def calculadora():
           5. Salir
           ''')
     try:
-      eleccion = int(input('Ingrese el numero que de la operacion que desea consultar: '))
+      eleccion = int(input('Ingrese el numero de la operacion que desea realizar: '))
       if eleccion in {1, 2, 3, 4, 5}:
         if eleccion == 5:
           print("Fue un gusto servirte")
@@ -46,33 +46,5 @@ if __name__ == '__main__':
   calculadora()    
 
 
-
-"""
-def suma(x, y):
-    return x + y
-
-def resta(x, y):
-    return x - y
-
-def multi(x, y):
-    return x * y
-
-def divi(x, y):
-    return "No se puede dividir por cero" if y == 0 else x/y
-  
-
-def calculadora(x, y):
-    
-    if operacion == "suma":
-        return suma(x, y)
-    elif operacion == "resta":
-        return resta(x, y)
-    elif operacion == "multi":
-        return multi(x, y)
-    elif operacion == "divi":
-        return divi(x, y)
-    else:
-        return "Operación no válida"
-"""
 
 
