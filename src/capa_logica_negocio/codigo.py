@@ -42,6 +42,7 @@ def calculadora():
       
     except ValueError:
       print("no puedes ingresar un caracter diferente a un númeroIngrese solamente un número según la operación ")  
+      
 if __name__ == '__main__':
   calculadora()    
 

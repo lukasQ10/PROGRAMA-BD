@@ -1,8 +1,10 @@
 import sys
 import os
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'capa_logica_negocio')))
 
-from capa_logica_negocio.codigo import calculadora
+
+from capa_data import saludo
+
+print(saludo)
 
 print("Ejecutanfo presentacion.py")
 
