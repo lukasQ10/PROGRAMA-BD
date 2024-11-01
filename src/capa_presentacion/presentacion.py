@@ -7,8 +7,8 @@ from tkinter import Tk, Label, Button
 
 #from src.capa_logica_negocio.codigo import calculadora
 
-#def iniciar_calculadora():
- # calculadora()
+def iniciar_calculadora():
+  pass #calculadora()
 
 ventana = Tk()
 ventana.title("Programa de registro") # titulo en la ventana
